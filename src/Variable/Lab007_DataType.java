@@ -1,6 +1,6 @@
 package Variable;
 
-public class Lab007 {
+public class Lab007_DataType {
 
 	public static void main(String[] args) {
 		int age = 15;
