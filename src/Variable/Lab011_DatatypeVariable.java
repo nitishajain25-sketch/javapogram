@@ -1,4 +1,4 @@
-package Variable;
+				package Variable;
 
 public class Lab011_DatatypeVariable {
 

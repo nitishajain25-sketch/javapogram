@@ -17,6 +17,7 @@ public class Lab015_Interview$Qn2 {
 		
 		int Lab015 = 123;
 
+		System.out.println(a_b);
 	}
 
 }

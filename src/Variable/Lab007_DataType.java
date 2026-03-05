@@ -6,7 +6,7 @@ public class Lab007_DataType {
 		int age = 15;
 		String name = "Student Name";
 		char classname = 'a';
-		Boolean isStudent = true ;
+		Lab018_Boolean isStudent = true ;
 		
 		System.out.println("Age = " + age);
 		System.out.println("Name = " + name);
