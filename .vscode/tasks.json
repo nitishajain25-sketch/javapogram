@@ -1,0 +1,57 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Java: Compile and Run Current File",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "-c",
+                "cd /home/ravi/Documents/Nitisha/GitHub/javapogram && javac -d bin ${relativeFile} && java -cp bin $(echo ${relativeFile} | sed 's|src/||; s|.java||; s|/|.|g')"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$javac"
+            ],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Java: Compile All",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "-c",
+                "cd /home/ravi/Documents/Nitisha/GitHub/javapogram && javac -d bin $(find src -name '*.java')"
+            ],
+            "group": "build",
+            "problemMatcher": [
+                "$javac"
+            ]
+        },
+        {
+            "label": "Java: Run Specific Class",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "-c",
+                "java -cp /home/ravi/Documents/Nitisha/GitHub/javapogram/bin ${input:className}"
+            ],
+            "inputs": [
+                {
+                    "id": "className",
+                    "type": "promptString",
+                    "description": "Enter the full class name (e.g., Operators.Lab030_Operator_Airthmetic)",
+                    "default": "Operators.Lab030_Operator_Airthmetic"
+                }
+            ]
+        }
+    ]
+}
